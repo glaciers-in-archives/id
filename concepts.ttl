@@ -1,0 +1,15 @@
+@prefix as: <http://www.w3.org/ns/activitystreams#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+
+<https://www.glaciersinarchives.org/id/agent/person>
+  a as:Person, skos:Concept ;
+  skos:prefLabel "Human/Person"@en ;
+  skos:definition "In Glaciers in Archives a Person/Human refers to an individual contributor that might or might not have an institutional association."@en .
+
+<https://www.glaciersinarchives.org/id/agent/machine>
+  a as:Application, skos:Concept ;
+  skos:prefLabel "Application/Machine"@en ;
+  skos:definition "In Glaciers in Archives an Application or Machine represents an autonomous process powered by software. Such a process could include but is not limited to Named Entity Recognition and Image Classification."@en ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Named-entity_recognition>, <https://en.wikipedia.org/wiki/Computer_vision#Recognition> .
