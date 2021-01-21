@@ -2,6 +2,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
+# AGENTS
 
 <https://www.glaciersinarchives.org/id/agent/person>
   a as:Person, skos:Concept ;
@@ -13,3 +14,52 @@
   skos:prefLabel "Application/Machine"@en ;
   skos:definition "In Glaciers in Archives an Application or Machine represents an autonomous process powered by software. Such a process could include but is not limited to Named Entity Recognition and Image Classification."@en ;
   rdfs:seeAlso <https://en.wikipedia.org/wiki/Named-entity_recognition>, <https://en.wikipedia.org/wiki/Computer_vision#Recognition> .
+
+# TYPES
+
+<https://www.glaciersinarchives.org/id/type/work>
+  a skos:Concept ;
+  skos:prefLabel "Work"@en ;
+  skos:definition "In Glaciers in Archives a work is a digital representation of a physical or virtual object depicting or describing a concept."@en ;
+  skos:narrower <https://www.glaciersinarchives.org/id/type/photograph>, <https://www.glaciersinarchives.org/id/type/painting>, <https://www.glaciersinarchives.org/id/type/map> ;
+  skos:closeMatch <http://www.wikidata.org/entity/Q386724> .
+
+<https://www.glaciersinarchives.org/id/type/photograph>
+  a skos:Concept ;
+  skos:prefLabel "Photograph"@en ;
+  skos:definition "Any type of photograph."@en ;
+  skos:narrower <https://www.glaciersinarchives.org/id/type/aerial-photograph>, <https://www.glaciersinarchives.org/id/type/stereoscopic-photograph> ;
+  skos:broader <https://www.glaciersinarchives.org/id/type/work> ;
+  skos:closeMatch <http://www.wikidata.org/entity/Q125191>, <https://schema.org/Photograph> ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Photograph> .
+
+<https://www.glaciersinarchives.org/id/type/aerial-photograph>
+  a skos:Concept ;
+  skos:prefLabel "Aerial photograph"@en ;
+  skos:definition "In Glaciers in Archives an aerial photograph is a photograph taken from an aircraft or other flying object that is not in geocentric orbit."@en ;
+  skos:broader <https://www.glaciersinarchives.org/id/type/photograph> ;
+  skos:closeMatch <http://www.wikidata.org/entity/Q11041719> ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Aerial_photography> .
+
+<https://www.glaciersinarchives.org/id/type/stereoscopic-photograph>
+  a skos:Concept ;
+  skos:prefLabel "Stereoscopic photograph"@en ;
+  skos:definition "In Glaciers in Archives stereoscopic photograph a set of photographs usually fitted to a stereoscopic card."@en ;
+  skos:broader <https://www.glaciersinarchives.org/id/type/photograph> ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Stereoscopy> .
+
+<https://www.glaciersinarchives.org/id/type/painting>
+  a skos:Concept ;
+  skos:prefLabel "Painting"@en ;
+  skos:definition "In Glaciers in Archives a painting is a visual work on which the surface is covered with paint."@en ;
+  skos:closeMatch <https://schema.org/Painting>, <http://www.wikidata.org/entity/Q3305213> ;
+  skos:broader <https://www.glaciersinarchives.org/id/type/work> ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Painting> .
+
+<https://www.glaciersinarchives.org/id/type/map>
+  a skos:Concept ;
+  skos:prefLabel "Map"@en ;
+  skos:definition "In Glaciers in Archives a work is a visual overview of a geographical area."@en ;
+  skos:closeMatch <https://schema.org/Map>, <http://www.wikidata.org/entity/Q4006> ;
+  skos:broader <https://www.glaciersinarchives.org/id/type/work> ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Map> .
