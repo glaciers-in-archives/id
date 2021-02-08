@@ -1,0 +1,10 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://www.glaciersinarchives.org/id/type/painting>
+  a skos:Concept ;
+  skos:prefLabel "Painting"@en ;
+  skos:definition "In Glaciers in Archives a painting is a visual work on which the surface is covered with paint."@en ;
+  skos:closeMatch <https://schema.org/Painting>, <http://www.wikidata.org/entity/Q3305213> ;
+  skos:broader <https://www.glaciersinarchives.org/id/type/work> ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Painting> .

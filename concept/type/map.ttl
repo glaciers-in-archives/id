@@ -1,0 +1,10 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://www.glaciersinarchives.org/id/type/map>
+  a skos:Concept ;
+  skos:prefLabel "Map"@en ;
+  skos:definition "In Glaciers in Archives a work is a visual overview of a geographical area."@en ;
+  skos:closeMatch <https://schema.org/Map>, <http://www.wikidata.org/entity/Q4006> ;
+  skos:broader <https://www.glaciersinarchives.org/id/type/work> ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Map> .
