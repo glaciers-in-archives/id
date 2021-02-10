@@ -1,8 +1,8 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<https://www.glaciersinarchives.org/id/type/work>
+<https://www.glaciersinarchives.org/concept/type/work>
   a skos:Concept ;
   skos:prefLabel "Work"@en ;
   skos:definition "In Glaciers in Archives a work is a digital representation of a physical or virtual object depicting or describing a concept."@en ;
-  skos:narrower <https://www.glaciersinarchives.org/id/type/photograph>, <https://www.glaciersinarchives.org/id/type/painting>, <https://www.glaciersinarchives.org/id/type/map> ;
+  skos:narrower <https://www.glaciersinarchives.org/concept/type/photograph>, <https://www.glaciersinarchives.org/concept/type/painting>, <https://www.glaciersinarchives.org/concept/type/map> ;
   skos:closeMatch <http://www.wikidata.org/entity/Q386724>, <https://schema.org/CreativeWork> .

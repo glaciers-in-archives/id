@@ -1,7 +1,7 @@
 @prefix as: <http://www.w3.org/ns/activitystreams#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<https://www.glaciersinarchives.org/id/agent/person>
+<https://www.glaciersinarchives.org/concept/agent/person>
   a as:Person ;
   skos:prefLabel "Human/Person"@en ;
   skos:definition "In Glaciers in Archives a Person/Human refers to an individual contributor that might or might not have an institutional association."@en .
